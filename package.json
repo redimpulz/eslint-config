@@ -1,0 +1,51 @@
+{
+  "name": "@redimpulz/eslint-config",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Shared ESLint configuration for Redimpulz projects",
+  "author": "Redimpulz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redimpulz/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/redimpulz/eslint-config/issues"
+  },
+  "homepage": "https://github.com/redimpulz/eslint-config#readme",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript",
+    "react",
+    "nextjs"
+  ],
+  "files": [
+    "base.js",
+    "react.js",
+    "next.js"
+  ],
+  "exports": {
+    "./base": "./base.js",
+    "./next-js": "./next.js",
+    "./react-js": "./react.js"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@next/eslint-plugin-next": "^16.0.8",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-config-turbo": "^2.5.8",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-turbo": "^2.4.0",
+    "globals": "^15.15.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.0"
+  }
+}
