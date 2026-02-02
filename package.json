@@ -1,6 +1,6 @@
 {
   "name": "@redimpulz/eslint-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "description": "Shared ESLint configuration for Redimpulz projects",
   "author": "Redimpulz",
