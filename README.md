@@ -1,5 +1,8 @@
 # @redimpulz/eslint-config
 
+[![npm version](https://img.shields.io/npm/v/@redimpulz/eslint-config.svg)](https://www.npmjs.com/package/@redimpulz/eslint-config)
+[![npm downloads](https://img.shields.io/npm/dm/@redimpulz/eslint-config.svg)](https://www.npmjs.com/package/@redimpulz/eslint-config)
+
 Shared ESLint configuration for Redimpulz projects.
 
 ## Installation
