@@ -11,6 +11,8 @@ Shared ESLint configuration for Redimpulz projects.
 npm install --save-dev @redimpulz/eslint-config eslint typescript
 ```
 
+**Note**: This package includes all necessary ESLint plugins and configurations as dependencies. You only need to install `eslint` and `typescript` as peer dependencies.
+
 ## Usage
 
 ### Base Configuration
