@@ -31,10 +31,11 @@
     "./react-js": "./react.js"
   },
   "scripts": {
-    "test:base": "eslint --config test/eslint.config.base.js test/base.test.ts test/types.ts",
-    "test:react": "eslint --config test/eslint.config.react.js test/react.test.tsx",
-    "test:next": "eslint --config test/eslint.config.next.js test/next.test.tsx",
-    "test": "npm run test:base && npm run test:react && npm run test:next"
+    "test:base": "eslint --max-warnings 10 --config test/eslint.config.base.js test/base.test.ts test/types.ts",
+    "test:react": "eslint --max-warnings 10 --config test/eslint.config.react.js test/react.test.tsx",
+    "test:next": "eslint --max-warnings 10 --config test/eslint.config.next.js test/next.test.tsx",
+    "test": "npm run test:base && npm run test:react && npm run test:next",
+    "prepare": "husky"
   },
   "peerDependencies": {
     "eslint": "^9.0.0",
@@ -50,10 +51,14 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-turbo": "^2.4.0",
     "globals": "^15.15.0",
-    "typescript-eslint": "^8.24.0"
+    "typescript-eslint": "^8.24.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.4.0",
+    "@commitlint/config-conventional": "^20.4.0",
     "eslint": "^9.39.1",
+    "husky": "^9.1.7",
     "typescript": "^5.7.3"
   }
 }
