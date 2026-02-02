@@ -1,3 +1,3 @@
-import { nextConfig } from "../next.js";
+import { nextConfig } from '../next.js';
 
 export default nextConfig;
