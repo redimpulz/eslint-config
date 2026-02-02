@@ -26,9 +26,32 @@ jobs:
       - name: Check package validity
         run: npm pack --dry-run
 
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Test base config
+        run: npm run test:base
+      
+      - name: Test react config
+        run: npm run test:react
+      
+      - name: Test next config
+        run: npm run test:next
+
   publish:
     if: startsWith(github.ref, 'refs/tags/')
-    needs: lint
+    needs: [lint, test]
     runs-on: ubuntu-latest
     permissions:
       contents: read
