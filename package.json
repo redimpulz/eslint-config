@@ -30,6 +30,12 @@
     "./next-js": "./next.js",
     "./react-js": "./react.js"
   },
+  "scripts": {
+    "test:base": "eslint --config test/eslint.config.base.js test/base.test.ts test/types.ts",
+    "test:react": "eslint --config test/eslint.config.react.js test/react.test.tsx",
+    "test:next": "eslint --config test/eslint.config.next.js test/next.test.tsx",
+    "test": "npm run test:base && npm run test:react && npm run test:next"
+  },
   "peerDependencies": {
     "eslint": "^9.0.0",
     "typescript": "^5.0.0"
